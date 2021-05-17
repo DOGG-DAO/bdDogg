@@ -39,7 +39,7 @@ nonces: public(HashMap[address, uint256])
 DOMAIN_SEPARATOR: public(bytes32)
 DOMAIN_TYPE_HASH: constant(bytes32) = keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)')
 PERMIT_TYPE_HASH: constant(bytes32) = keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)")
-wrapToken: constant(address) = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
+wrapToken: constant(address) = 0x5986d5c77c65e5801a5caa4fae80089f870a71da
 adminDogg: public(address)
 txTaxDivisor:   public(uint256)
 taxDogg: public(address)
@@ -49,7 +49,7 @@ def __init__():
     self.DOMAIN_SEPARATOR = keccak256(
         concat(
             DOMAIN_TYPE_HASH,
-            keccak256(convert("Dogg Wrapped Shitcoin", Bytes[21])),
+            keccak256(convert("Dogg wrapped micro bDigg", Bytes[24])),
             keccak256(convert("1", Bytes[1])),
             convert(chain.id, bytes32),
             convert(self, bytes32)
@@ -62,20 +62,20 @@ def __init__():
 
 @view
 @external
-def name() -> String[21]:
-    return "Dogg Wrapped Shitcoin"
+def name() -> String[24]:
+    return "Dogg wrapped micro bDigg"
 
 
 @view
 @external
-def symbol() -> String[7]:
-    return "DOGSHIT"
+def symbol() -> String[6]:
+    return "bdDogg"
 
 
 @view
 @external
 def decimals() -> uint256:
-    return 15
+    return 10
 
 
 @internal
