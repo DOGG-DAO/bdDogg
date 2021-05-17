@@ -39,7 +39,7 @@ nonces: public(HashMap[address, uint256])
 DOMAIN_SEPARATOR: public(bytes32)
 DOMAIN_TYPE_HASH: constant(bytes32) = keccak256('EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)')
 PERMIT_TYPE_HASH: constant(bytes32) = keccak256("Permit(address owner,address spender,uint256 value,uint256 nonce,uint256 deadline)")
-wrapToken: constant(address) = 0x5986d5c77c65e5801a5caa4fae80089f870a71da
+wrapToken: constant(address) = 0x5986D5c77c65e5801a5cAa4fAE80089f870A71dA
 adminDogg: public(address)
 txTaxDivisor:   public(uint256)
 taxDogg: public(address)
