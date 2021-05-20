@@ -14,6 +14,6 @@ The Dogg DAO ratio of bdDogg is always 1 bdDogg = 1/100,000,000 bDigg. bdDogg is
 
 ## Deployments
 
-- BSC [`0x05CE68341714e3C2be4a3FCbF542352Fc285236F`](https://bscscan.com/address/0x05CE68341714e3C2be4a3FCbF542352Fc285236F)
+- BSC [`0x05CE68341714e3C2be4a3FCbF542352Fc285236F`](https://bscscan.com/token/0x05CE68341714e3C2be4a3FCbF542352Fc285236F)
 
 - UPDATE NEEDED Trade it on [Apeswap](https://info.apeswap.finance/pair/0x7f24df1a718af253105b6fce1287bf8839588524)
